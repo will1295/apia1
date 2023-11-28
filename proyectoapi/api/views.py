@@ -9,7 +9,7 @@ from django.shortcuts import get_object_or_404
 class Apicrud(APIView):
     permission_classes=[permissions.IsAuthenticated]
 
-    def get_object(self, estudiante_id, user_id):
+    def get_object(self, estudiante_id):
             return get_object_or_404(Estudiante, id=estudiante_id)
 
 
